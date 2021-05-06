@@ -1,5 +1,5 @@
-var mysql      = require('mysql2');
-var connection = mysql.createConnection({
+var mysql      = require('mysql');
+var connection = mysql.createPool({
 	host     : 'us-cdbr-east-03.cleardb.com',
 	user     : 'bab2685f19d08c',
 	password : '415d70d5',
