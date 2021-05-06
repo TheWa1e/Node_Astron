@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>ZET</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="/img/z.png" type="image/icon">
+   <link rel="stylesheet" href="css/bootstrap_css/bootstrap.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/button.css">
+</head>
+<body>
+   <style>
+      .hidden {
+       display: none;
+    }
+ </style>
+ <header>
+   <div class="nav-wrapper">
+
+      <div class="hidden" id="gated-content">
+         <label>
+            <img id="picture" src="" alt="logo">
+            <pre id="name"></pre>
+            <pre id="ipt-user-profile"></pre>
+         </label>
+         <div id="btncontainerout" class="hidden">
+           <button  id="btn-logout" class="hidden" onclick="logout()">
+             <span class="circle" aria-hidden="true">
+               <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Log out</span>
+         </button>
+      </div>
+   </div>
+   <nav class="main-nav">
+
+      <div id="btncontainerin">
+        <button  id="btn-login" class="show" onclick="login()">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+         </span>
+         <span class="button-text">Log in</span>
+      </button>
+   </div>
+
+
+</nav>
+<div class="container">
+   <nav class="navbar navbar-expand{-sm|-md|-lg|-xl} navbar-dark bg-light">
+      <a class="navbar-brand"><img src="img/ZET.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-text">menu</span><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#services">Best quality</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#works">Our Photos</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#Happy_Clients">Happy Clients</a>
+               <li class="nav-item">
+                  <a class="nav-link" href="#Pricing_table">Pricing table</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+</div>
+<div class="section-table">
+   <div class="section-row">
+      <div class="section-cell">
+         <div class="hero">
+            <div class="text">
+               <h1>Feel like a wave conqueror</h1>
+               <p>We offer you an alternative to a traditional holiday in a cafe-boat trips. This is a great option for weddings, anniversaries. The Moskvich class pleasure boat is ideal for holding various events with a capacity of up to 50 people.</p>
+            </div>
+            <button onclick="location.href ='#regform'" type="button" class="btn btn-outline-light btn-hero">LET’S TALK</button>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="arrow-wrapper">
+   <div class="arrow">
+      <div class="arrow-circle">
+         <a href="#services"><img src="img/arrow.png" style="width: 30px; margin-top: 15px;" class="mx-auto d-block"></a>
+      </div>
+      <div class="arrow-line">
+      </div>
+   </div>
+</div>
+</header>
+<main>
+   <section class="service" id='services'>
+      <div class="container">
+         <div class="service-top">
+            <h2>BEST QUALITIES</h2>
+            <p class="top__text">We are very sensitive to what we have achieved thanks to our customers.</p>
+            <div class="top-line"></div>
+         </div>
+         <div class="service-bottom">
+            <div class="row">
+               <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card">
+                     <a href="#" class="service-click">
+                        <div class="card-top card-top--1"></div>
+                        <h3 class="card-title">River walk</h3>
+                     </a>
+                     <div class="card-body">
+                        <p class="card-text">Regular boat trips to the south of the capital on a cozy river tram.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card">
+                     <a href="#" class="service-click">
+                        <div class="card-top card-top--2"></div>
+                        <h3 class="card-title">Vivid memories</h3>
+                     </a>
+                     <div class="card-body">
+                        <p class="card-text">During the walk from the boat, you will enjoy picturesque views of the sights and landscape parks of the city.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card">
+                     <a href="#" class="service-click">
+                        <div class="card-top card-top--3"></div>
+                        <h3 class="card-title">A fun celebration</h3>
+                     </a>
+                     <div class="card-body">
+                        <p class="card-text">Enjoy spending time with your work colleagues, friends, or family.
+												We will select the best walking route for you, which will meet your wishes and the duration of your event.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card">
+                     <a href="#" class="service-click">
+                        <div class="card-top card-top--4"></div>
+                        <h3 class="card-title">MADE WITH LOVE</h3>
+                     </a>
+                     <div class="card-body">
+                        <p class="card-text">We love our guests and try to provide them with decent service and care.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="works" id='works'>
+      <div class="container">
+         <div class="works-top">
+            <h2>Our Photos</h2>
+            <p class="top__text">Here we have collected the most interesting and beautiful photos. You can see even more photos in our instagram.</p>
+            <div class="top-line"></div>
+         </div>
+      </div>
+      <div class="works-bottom">
+         <div class="works-item works-item1">
+            <img src="img/photo1.jpg">
+          </div>
+         <div class="works-item works-item2">
+            <img src="img/photo2.jpg">
+         </div>
+         <div class="works-item works-item3">
+            <img src="img/photo3.jpg">
+         </div>
+         <div class="works-item works-item4">
+            <img src="img/photo4.jpg">
+         </div>
+         <div class="works-item works-item5">
+            <img src="img/photo5.jpg">
+         </div>
+         <div class="works-item works-item6">
+            <img src="img/photo6.jpg">
+         </div>
+         <div class="works-item works-item7">
+            <img src="img/photo7.jpg">
+         </div>
+         <div class="works-item works-item8">
+            <img src="img/photo8.jpg">
+         </div>
+         <div class="works-item works-item9">
+            <img src="img/photo9.jpg">
+         </div>
+         <div class="works-item works-item10">
+            <img src="img/photo10.jpg">
+         </div>
+         <div class="works-item works-item11">
+            <img src="img/photo11.jpg">
+         </div>
+         <div class="works-item works-item12">
+            <img src="img/photo12.jpg">
+         </div>
+         <div class="works-item works-item13">
+            <img src="img/photo13.jpg">
+         </div>
+         <div class="works-item works-item14">
+            <img src="img/photo14.jpg">
+         </div>
+         <div class="works-item works-item15">
+            <img src="img/photo15.jpg">
+         </div>
+      </div>
+   </section>
+   <section class="testimonial" id='Happy_Clients'>
+      <div class="container">
+         <div class="testimonial-top">
+            <h2>HAPPY CLIENTS</h2>
+            <p class="top__text">On our website you can leave your feedback, the best of them will be presented here.</p>
+            <div class="top-line"></div>
+         </div>
+         <div class="testimonial-bottom">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                 <div class="carousel-item active">
+                  <p class="bottom__text"><%= params[0].message %></p>
+                  <p class="bottom__title">
+                     <img src="img/kav.png" class="mx-auto d-block" style="width: 20px; height: 100%">
+                  </p>
+                  <a href="" class="slider__click">
+                     <img src="img/photo.jpg">
+                     <p class="slider__head">Vasily Nganu </p>
+                     <p class="slider__text">Dropbox Senior    Developer</p>
+                  </a>
+               </div>
+               <div class="carousel-item">
+                  <p class="bottom__text"><%= params[2].message %></p>
+                  <p class="bottom__title">
+                     <img src="img/kav.png" class="mx-auto d-block" style="width: 20px; height: 100%">
+                  </p>
+                  <a href="" class="slider__click">
+                     <img src="img/andrey.png">
+                     <p class="slider__head">Andrey Erofeev </p>
+                     <p class="slider__text">VSRAP Junior    Designer</p>
+                  </a>
+               </div>
+               <div class="carousel-item">
+                  <p class="bottom__text"><%= params[1].message %></p>
+                  <p class="bottom__title">
+                     <img src="img/kav.png" class="mx-auto d-block" style="width: 20px; height: 100%">
+                  </p>
+                  <a href="" class="slider__click">
+                     <img src="img/ruslan.png">
+                     <p class="slider__head">Galulin Ruslan </p>
+                     <p class="slider__text">Mail.ru Middle    Developer</p>
+                  </a>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+           </a>
+           <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+         </ol>
+      </div>
+   </div>
+</div>
+</section>
+<section class="team">
+   <div class="container">
+      <div class="team-top">
+         <h2>Our friendly team</h2>
+         <p class="top__text">They strive to make your holiday better.</p>
+         <div class="top-line"></div>
+      </div>
+      <div class="team-center">
+         <div class="row">
+            <div class="team-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+               <div class="card">
+                  <div class="card-wrapper">
+                     <a class="team-card__click" href="#">
+                        <img class="card-img-top" src="img/ravenclaw.jpg" alt="Card image cap">
+                        <h5 class="team-card--title">Baranov Anatoliy</h5>
+                     </a>
+                     <p class="team-card--text">Boatswain</p>
+                     <ul class="team-social">
+                        <li class="team-social__item"><a href="https://twitter.com" class="team-social__click team-social__click-tw"></a></li>
+                        <li class="team-social__item"><a href="https://www.instagram.com" class="team-social__click team-social__click-in"></a></li>
+                        <li class="team-social__item"><a href="https://vseti.co" class="team-social__click team-social__click-vi"></a></li>
+                        <li class="team-social__item"><a href="https://dribbble.com" class="team-social__click team-social__click-do"></a></li>
+                        <li class="team-social__item"><a href="https://mail.google.com" class="team-social__click team-social__click-email"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="team-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+               <div class="card">
+                  <div class="card-wrapper">
+                     <a class="team-card__click" href="#">
+                        <img class="card-img-top" src="img/gryffindor.jpg" alt="Card image cap">
+                        <h5 class="team-card--title">КАК ЗВАТЬ?</h5>
+                     </a>
+                     <p class="team-card--text">Skipper</p>
+                     <ul class="team-social">
+                        <li class="team-social__item"><a href="https://twitter.com" class="team-social__click team-social__click-tw"></a></li>
+                        <li class="team-social__item"><a href="https://www.instagram.com" class="team-social__click team-social__click-in"></a></li>
+                        <li class="team-social__item"><a href="https://vseti.co" class="team-social__click team-social__click-vi"></a></li>
+                        <li class="team-social__item"><a href="https://dribbble.com" class="team-social__click team-social__click-do"></a></li>
+                        <li class="team-social__item"><a href="https://mail.google.com" class="team-social__click team-social__click-email"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="team-col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+               <div class="card">
+                  <div class="card-wrapper">
+                     <a class="team-card__click" href="#">
+                        <img class="card-img-top" src="img/salazar.jpg" alt="Card image cap">
+                        <h5 class="team-card--title">КАК ЗВАТЬ?</h5>
+                     </a>
+                     <p class="team-card--text">Navigator</p>
+                     <ul class="team-social">
+                        <li class="team-social__item"><a href="https://twitter.com" class="team-social__click team-social__click-tw"></a></li>
+                        <li class="team-social__item"><a href="https://www.instagram.com" class="team-social__click team-social__click-in"></a></li>
+                        <li class="team-social__item"><a href="https://vseti.co" class="team-social__click team-social__click-vi"></a></li>
+                        <li class="team-social__item"><a href="https://dribbble.com" class="team-social__click team-social__click-do"></a></li>
+                        <li class="team-social__item"><a href="https://mail.google.com" class="team-social__click team-social__click-email"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="team-col col-12 col-sm-6 col-md-6 col-lg-12 col-xl-3">
+               <div class="card">
+                  <div class="card-wrapper">
+                     <a class="team-card__click" href="#">
+                        <img class="card-img-top" src="img/hufflepuff.jpg" alt="Card image cap">
+                        <h5 class="team-card--title">КАК ЗВАТЬ?</h5>
+                     </a>
+                     <p class="team-card--text">Senior sailor</p>
+                     <ul class="team-social">
+                        <li class="team-social__item"><a href="https://twitter.com" class="team-social__click team-social__click-tw"></a></li>
+                        <li class="team-social__item"><a href="https://www.instagram.com" class="team-social__click team-social__click-in"></a></li>
+                        <li class="team-social__item"><a href="https://vseti.co" class="team-social__click team-social__click-vi"></a></li>
+                        <li class="team-social__item"><a href="https://dribbble.com" class="team-social__click team-social__click-do"></a></li>
+                        <li class="team-social__item"><a href="https://mail.google.com" class="team-social__click team-social__click-email"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="team-bottom"><button type="button" class="btn team-btn btn-outline-light btn-hero">MEET OUR FULL TEAM</button></div>
+</section>
+<!--<div class="clients">
+   <div class="container">
+      <div class="clients-wrap">
+         <div class="clients-item"><img src="img/Coca-Cola.png" alt="coca-cola"></div>
+         <div class="clients-item"><img src="img/Dropbox.png" alt="dropbox"></div>
+         <div class="clients-item"><img src="img/Intel.png" alt="intel"></div>
+         <div class="clients-item"><img src="img/Zendesk.png" alt="zendesk"></div>
+         <div class="clients-item"><img src="img/Nokia.png" alt="nokia"></div>
+      </div>
+   </div>
+</div>-->
+<section class="pricing" id='Pricing_table'>
+   <div class="container">
+      <div class="pricing-top">
+         <h2>	PRICING TABLE</h2>
+         <p class="top__text">Our prices perfectly surprise all passengers</p>
+         <div class="top-line"></div>
+      </div>
+      <div class="pricing-bottom">
+         <div class="card-group">
+            <div class="card text-center" id="card1">
+               <div class="card-header">
+                  <h5 class="card-pricing__title">Children's ticket</h5>
+                  <h4 class="card-pricing__price">400₽</h4>
+                  <p class="card-pricing-header__text">PER ONE-THIRTY</p>
+               </div>
+               <div class="card-body">
+                  <div class="card-body-wrapper">
+                     <p class="card-pricing__text">Enjoy the fresh air and the river expanse during a water trip on the cozy motor ship "Natalie" along an unusual walking route.
+                     	During the walk from the boat you will enjoy picturesque views of the sights and landscape parks of the city.
+                     </p>
+                  </div>
+               </div>
+               <button type="button" class="btn btn-dark button1" >SIGN UP</button>
+            </div>
+            <div class="card text-center active" id="card2">
+               <div class="card-header">
+                  <h5 class="card-pricing__title">Adult's ticket</h5>
+                  <h4 class="card-pricing__price">600₽</h4>
+                  <p class="card-pricing-header__text">PER ONE-THIRTY</p>
+               </div>
+               <div class="card-body">
+                  <div class="card-body-wrapper">
+                     <p class="card-pricing__text">Enjoy the fresh air and the river expanse during a water trip on the cozy motor ship "Natalie" along an unusual walking route.
+                     	During the walk from the boat you will enjoy picturesque views of the sights and landscape parks of the city.
+                     </p>
+                  </div>
+               </div>
+               <button type="button" class="btn btn-dark button2">SIGN UP</button>
+            </div>
+            <div class="card text-center" id="card3">
+               <div class="card-header">
+                  <h5 class="card-pricing__title">Boat rental</h5>
+                  <h4 class="card-pricing__price">5500₽</h4>
+                  <p class="card-pricing-header__text">PER HOUR</p>
+               </div>
+               <div class="card-body">
+                  <div class="card-body-wrapper">
+                     <p class="card-pricing__text">Enjoy spending time with your work colleagues, friends, or family. 
+                     	We will select the best walking route for you, which will meet your wishes and the duration of your event. 
+                     	Prices, discounts and menus are discussed individually.
+                     </p>
+                  </div>
+               </div>
+               <button type="button" class="btn btn-dark button3" >SIGN UP</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<div class="contact">
+   <div class="contact-row row">
+      <div class="contact-col col-sm-12 col-md-12 col-lg-6">
+         <div class="contact-left" id="app">
+            <yandex-map :coords="coords" zoom=17>
+               <ymap-marker :coords="coords" marker-id="123123" marker-type="placemark"/></yandex-map>
+            </div>
+         </div>
+         <div class="contact-col col-sm-12 col-md-12 col-lg-6">
+            <div class="contact-right" id="regform">
+               <form action="/controllers/send-message-controller" method="POST">
+                  <div class="form-group row">
+                     <label for="inputText3" class="col-3 col-sm-3 col-form-label">Name</label>
+                     <div class="col-9 col-sm-9">
+                        <input type="text" class="form-control" name="username" id="inputText3" required>
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="inputEmail3" class="col-3 col-sm-3 col-form-label">Email</label>
+                     <div class="col-9 col-sm-9">
+                        <input type="email" class="form-control" name="emailaddres" id="inputEmail3" required>
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="inputTel3" class="col-3 col-sm-3 col-form-label">Phone</label>
+                     <div class="col-9 col-sm-9">
+                        <input type="tel" class="form-control" name="phone" id="inputTel3" required>
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="inputTextarea3" class="col-3 col-sm-3 col-form-label">Message</label>
+                     <div class="col-9 col-sm-9">
+                        <textarea class="form-control" id="inputTextarea3" name="message" rows="4" style="resize: vertical; max-height: 200px;" ></textarea>
+                     </div>
+                  </div>
+                  <div class="form-bottom">
+                     <button type="submit" class="btn btn-outline-light" name="  ">Submit</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</main>
+<footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-12 col-sm-12 col-md-6">
+            <div class="footer-logo">
+               <div class="footer-logo--wrapper">
+                  <a class="footer-logo__click" href="#"><img src="img/zet2.png" alt="logo"></a>
+               </div>
+               <p class="footer-logo__text">© Copyright 2021. Allright Reserved</p>
+            </div>
+         </div>
+         <div class="col-social col-12 col-sm-12 col-md-6">
+            <ul class="social-item">
+               <li class="social-link footer-social__text">Say In Touch</li>
+               <li class="social-link">
+                  <a href="https://facebook.com" class="social-link__click social-link__click--f">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                        <image id="facebook" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAQAAAC00HvSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiChgKKR+MnGAwAAAB60lEQVRIx62Vz0sbQRSAv0yjqbkYf7ZCoyBBS7FQQaWVIljNRVDEg/+A9/bioeIloKeKFA/equLfoEKhXiqieJHSCqVULQV/EKImoktgFdPLro3JvEk0vncYdt63HzOzjx0PUrwizAtCVOMnSYxtfvCFFfKOct7zi5Q2d4lQk49kmBNB4abFqFnxhNUcCjc3eSpJ2kjkKUmRwqZLJ2m5hcLNN5mSKpLGF5JYWFxkzdff1GyKgp8MUk8l5ZQxm1XdSZe8EyX7FKdxkxpizC36NYt1M3JjzeNapgK8wFu8YgtsOGOQ1zzgpZYZYRjg0HC07Q66YmxHpWjhsaEhS5wxZGD8hL30CUWLI+D8enPNQCkBLdsLC8JS5zX4jMB+VZkNdB22Zq5SYIOKR0LpXDMnnWLAy0Oh1EkEmOMvAEMEgUaBLSLH36XHAWNGKq6IYgp3a7+NVELxh8JjX/HtHjRbisV70Cwp1jguUGLzWQHTBWo+cQFQypX4KTscdN3wuWtAAaeGe+fMGS9F4iOH/x+kW7KbYnz42BDqB3jSnXVSfxIlShRbqDdlLq7zDvdUv26X3VzeSjIgHdczvuep2KbV3AXjhuvGzQmKcrdTHR84EAQxpmjIfsUjqHx0EeY5tZThwybOHlsss4ylw/8B1en9tCUCpfYAAAAASUVORK5CYII="/>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social-link">
+                  <a href="https://twitter.com" class="social-link__click social-link__click--vk">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                        <image id="social71" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAQAAAC00HvSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiChgKKS7dQmAKAAACKUlEQVRIx52UTUhUURTHfzOakhBRaDUkCVYSWpRm2ceqJquNEbZrH9IihHSh1EIrZqGCBBUuLSho1cJokxSFQhBI2RfCpBQxLswvzGymwdvizUzv3a83vnNW73/P+d1z7znvhjDZURo5wC62UMIKM8T5wHNek7dtpoMJhNYn6SKSD6SdOQMi68tcsyPKGfFBZH2MPSbIYRbyhAgEKaI6SP0aEFk/KUPKWAmAEVR6MWOBIIKvbkhrQIhAcBMgBJSwSKHvIDxglEKiNAMwTnUup5RZgA4PfZBHyo6z1OZwTdyjgfuu1T5nYdqTUg+8lDBHpMpqeMh31ziG1UafBqDHpYxKkDAbaGPJFXEGbkiYlkxwHYP8QSB4qtxTp5RzB4YkKUl5LnwbF4hxWcFMSTmv4JNHSPOCK6z36dp7CTMJPyXpOFBkhRTxS8qZQ5He+E7QMWUglsKkpKAGBthqxVxUlDR80Qz4dXYaIQWeVjs+Bc8UcYHdllp6NduOQEwjv6PMANmv/T0HdBfm+BAHFUip0lfHmwDtUponytGq+KaFJFkH0O2SpuniHHWa47SQNNR91wnYyGpO+s1jzkqA7VzireXhijjPFnQSk1I/EyfBKhEqqbE+av1c/f8xYdnN5olMIRmrCIjZKxd3IgDkvO6Up0ivCdJsuq5qxvNExDmE1W7x1xfS6wyc3SroIWEAzHCbKjUlZEAVE6WRfexgE8WkmOcHHxlmmGVd+D/ovqeGaoAClwAAAABJRU5ErkJggg=="/>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social-link">
+                  <a href="https://google.com" class="social-link__click social-link__click--go">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                        <image id="social92" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAQAAAC00HvSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiChgKKhA3Di5iAAACwklEQVRIx5XVTWxUVRTA8d88W4pjaqjCIIGIgUqaSqMmfIjggkLjyvCVyA5NXLjQ6gJiaFhohBCEhMREEhcKLEl0gTGiiVWjdAmFgCiaShPAtgpUEvmQgTAs5s1w37x503rO4r1z7rn/d3LuueflZMkyPZ7RriDvpkuGnPatn0xaHrHVb0p19Zz3zJoMZIvxDERFr9vWGDHHwASIig7qyIIscXWSkJKSolX1IIv+B6Ki3ZXNufg5w3lTA+gJv5umFTeMK5qluxobynznQnMw+MZxy7ygK15p0eVJh92tm88fIeTtYGE/Nrqp5Jh2FGrKflS/K4G9vQLJu111nsTcqnXNw5iZyCTCVwnwo0R4S1OQF5uq1kN24i8HgsxnYEqiPn3lx2iV+58p2B58aUwObwaeOTha045RZJHHAnITzgb2TAUSZwgPJKy8Ht5PkJdjWsKTx7CLno61GfPj93fimI/4MrHpe/B61f4Om5R8UbfvO+KoH3PO6Ews7dKHV32gYNg8G3yOC76Rk8MWV23WqeSudivBMJdTLfWDlzVZqltkQ2r1CQzV+Ma5lnFfPgYjKf9s9Nf4/o0UM+77bPBGyv8nbtT47vBrRjZD8TGvVUz411vhWE3sMEdSgH1We1GvNTGow98TDIwBdiYcR7Sh14BRJWN6wVMZ9zuo4/OB+Rlaa87uEOrlHOpL3D/ysdTkKetWvNsAcktzhH1xvQ9iqmdTZ7MO12XLJ25H2KsEruCWX1JhJ/FcA8yOyktfdWSxPJU0hQYl3hsSy3/JT8E8X8e9ctkBraY7nwkZSQ76yuA847V4Ybo2eW1eCUZsWheWt99nrYyHBBw3aNyDOnWLGlRlncNp52p3JujWpK7Ponc6NUnEkMUayo6GtSjrHs0mlLl215kzZb3kQwvSW3IZqBar9OjyuDYtiv5x0c/69dfv53uzrXf9zp/F/wAAAABJRU5ErkJggg=="/>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social-link">
+                  <a href="https://dribbble.com" class="social-link__click social-link__click--dr">
+                     <svg xmlns="http://www.w3.org/2000/svg"  width="35" height="35" viewBox="0 0 35 35">
+                        <image id="dribble" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAQAAAC00HvSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiChgKKi1vZmJzAAADQklEQVRIx43VbUyWZRQH8B8EYSBFqBlbSStKYmDvEG29R61lm8W3tsxqva0cazbU1Voas7Rs1qzJ2mzrm7W0rZc5sw81lvLFrXwpCzXEdKXWAgwC8+kD13Nx3w8P5Tlfzvmfc/+v6zrnXPdVYDJp1uJKNc5TashRPXb6wtdOWyotsVcmr+73kqrTIXnO75NQZPWE5/+b4gJd/0OR1R1qkx8WJOxGW5yT8DO67dFrQJlqtZoUJ6Kj7vblxJ1cm1rtZ+0uysmYqi2nZrflkswwlAgvi/hynd63zmLXBWRxiujiNM2OGOh3M5ivCB+kutQe9v1bxPYlSdoiPOgSNNglYw3YmVr9R62oShC9nCUpNRrBJtwUvStwaU6PPgO1CWTaGM2SFPPs1DHg1QSyARUaUid4fYzmSHB/Bb2ptV9IYKMWxWPCvjiOhclGL8LTEwatFvcbtN50zLRNRsaLeDDm3MXyYJ5Uhv4JNB9COP+T/groEBgM3lo+Ceb2RHGHHbLde57RrDQ04onEUGRHb3Owv2J3MDtxoSZ1qhQmhuEsLSh0PGeXb2FlthVFZob0PvTpC950dS5Xb44bFVhorYd8ZMCQEuWmoBk/heyKIlOC+Sc6tChRrkJlYj/HlOBT0wzGSWtQTvSLi4woCyEaNebctf1W6Yx3+npnO+WYvboh/g9O8n043zvoyDn/ypA2z3w0JiK9FmJF8A7weTC7chJH3APm+kYmDNwPifijxrvcNc74tzMxEK9oPcptSDV4RfT+CfUc89ZxQww9haXBnoOr/ZJYfT2uid4baI3evWOdGHPGmj0S4KacOh1MrD+sBHviOYphWUxtxwPexfmJn0dWZ2OTjIxb8EjE3xbadipC9aAy3vqktmG1jAWYlcDju7U0QsfNQI3hPDQf404Po9zBVJWijP/xj7gKBV6JNctqd8itcSBih1NPlOrUB88GdK7VNtpikzXuC6/U46mq1edMvVtTRN96zERZoDuVNS8bSG7pDpudkfD7bbNbj35T1ajTlP15B2m1UV6p812e0ubTnvj8TSIdeSYmV19LveaTSLVVDk9CcNSbLpv4ScEkVCVu16LBLOcqMeIPh+yy1VYn8qX/CzQtdSwe8mnvAAAAAElFTkSuQmCC"/>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</footer>
+<script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+<script src="js/app.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+<script src="https://unpkg.com/vue-yandex-maps"></script>
+<script src="js/bootstrap_js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

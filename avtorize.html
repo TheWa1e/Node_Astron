@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sign In</title>
+	<link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://bootstraptema.ru/plugins/font-awesome/4-4-0/font-awesome.min.css" />
+</head>
+<body>
+	<script src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://bootstraptema.ru/plugins/2015/b-v3-3-6/bootstrap.min.js"></script>
+	<script src="https://bootstraptema.ru/_sf/3/394.js" type="text/javascript"></script>
+
+	<style>
+	@charset "UTF-8";
+		.animated {
+			-webkit-animation-duration: 1s;
+			-moz-animation-duration: 1s;
+			-o-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			-moz-animation-fill-mode: both;
+			-o-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
+
+		.animated.hinges {
+			-webkit-animation-duration: 2s;
+			-moz-animation-duration: 2s;
+			-o-animation-duration: 2s;
+			animation-duration: 2s;
+		}
+
+		.animated.slow {
+			-webkit-animation-duration: 3s;
+			-moz-animation-duration: 3s;
+			-o-animation-duration: 3s;
+			animation-duration: 3s;
+		}
+
+		.animated.snail {
+			-webkit-animation-duration: 4s;
+			-moz-animation-duration: 4s;
+			-o-animation-duration: 4s;
+			animation-duration: 4s;
+		}
+
+		@-webkit-keyframes shake {
+			0%, 100% {-webkit-transform: translateX(0);}
+			10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+			20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+		}
+
+		@-moz-keyframes shake {
+			0%, 100% {-moz-transform: translateX(0);}
+			10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+			20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+		}
+
+		@-o-keyframes shake {
+			0%, 100% {-o-transform: translateX(0);}
+			10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+			20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+		}
+
+		@keyframes shake {
+			0%, 100% {transform: translateX(0);}
+			10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+			20%, 40%, 60%, 80% {transform: translateX(10px);}
+		}
+
+		.shake {
+			-webkit-animation-name: shake;
+			-moz-animation-name: shake;
+			-o-animation-name: shake;
+			animation-name: shake;
+		}
+
+		.login .modal-dialog{
+			width: 350px;
+		}
+		.login .modal-footer{
+			border-top: 0;
+			margin-top: 0px;
+			padding: 10px 20px 20px;
+		}
+		.login .modal-header {
+			border: 0 none;
+			padding: 15px 15px 15px;
+			/* padding: 11px 15px; */
+		}
+		.login .modal-body{
+			/* background-color: #eeeeee; */
+		}
+		.login .division {
+			float: none;
+			margin: 0 auto 18px;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			width: 100%;
+		}
+		.login .division .line {
+			border-top: 1px solid #DFDFDF;
+			position: absolute;
+			top: 10px;
+			width: 34%;
+		}
+		.login .division .line.l {
+			left: 0;
+		}
+		.login .division .line.r {
+			right: 0;
+		}
+		.login .division span {
+			color: #424242;
+			font-size: 17px;
+		}
+		.login .box .social {
+			float: none;
+			margin: 0 auto 30px;
+			text-align: center;
+		}
+
+		.login .social .circle{
+			background-color: #EEEEEE;
+			color: #FFFFFF;
+			border-radius: 100px;
+			display: inline-block;
+			padding: 15px;
+		}
+		.login .social .circle .fa{
+			font-size: 16px;
+		}
+		.login .social .facebook{
+			background-color: white;
+			color: #FFFFFF;
+		}
+		.login .social .google{
+			background-color: white;
+		}
+		.login .social .github{
+			background-color: white;
+		}
+		.login .facebook:hover{
+			background-color: white;
+		}
+		.login .google:hover{
+			background-color: white;
+		}
+		.login .github:hover{
+			background-color: white;
+		}
+		.login .forgot {
+			color: #797979;
+			margin-left: 0;
+			overflow: hidden;
+			text-align: center;
+			width: 100%;
+		}
+		.login .btn-login, .registerBox .btn-register{
+			background-color: #00BBFF;
+			border-color: #00BBFF;
+			border-width: 0;
+			color: #FFFFFF;
+			display: block;
+			margin: 0 auto;
+			padding: 15px 50px;
+			text-transform: uppercase;
+			width: 100%;
+		}
+		.login .btn-login:hover, .registerBox .btn-register:hover{
+			background-color: #00A4E4;
+			color: #FFFFFF;
+		}
+		.login .form-control{
+			border-radius: 3px;
+			background-color: rgba(0, 0, 0, 0.09);
+			box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+			color: #FFFFFF;
+		}
+		.login .form-control:hover{
+			background-color: rgba(0,0,0,.16);
+		}
+		.login .form-control:focus{
+			box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;
+			background-color: rgba(0,0,0,0.23);
+			color: #FFFFFF;
+		}
+		.login .box .form input[type="text"], .login .box .form input[type="password"] {
+			border-radius: 3px;
+			border: none;
+			color: #333333;
+			font-size: 16px;
+			height: 46px;
+			margin-bottom: 5px;
+			padding: 13px 12px;
+			width: 100%;
+		}
+
+
+	</style>
+
+	<div class="modal fade login" id="loginModal">
+		<div class="modal-dialog login animated">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Login with</h4>
+				</div>
+				<div class="modal-body"> 
+					<div class="box">
+						<div class="content">
+							<div class="social">
+								<a class="circle github" href="#"><img src="http://pngimg.com/uploads/github/github_PNG40.png" 
+									alt="logo" style="width: 50px" type="button" id="btn-github"> </a>
+								<a id="google_login" class="circle google" href="#"><img src="https://www.phonedo.ru/wp-content/uploads/2017/04/Google_-G-_Logo.svg_.png" 
+									alt="logo" style="width: 45px" type="button" id="btn-google"> </a>
+									<a id="facebook_login" class="circle facebook" href="#"><img src="https://cdn.worldvectorlogo.com/logos/facebook-3.svg" 
+										alt="logo" style="width: 45px" type="button" id="btn-facebook"> </a>
+								</div>
+								<div class="division">
+									<div class="line l"></div>
+									<span>or</span>
+									<div class="line r"></div>
+								</div>
+								<div class="error"></div>
+								<div id="error-message" class="form loginBox">
+									<form onsubmit="return false;" method="post" accept-charset="UTF-8">
+										<input id="email" class="form-control" type="text" id="email" placeholder="Enter your email" name="email">
+										<input id="password" class="form-control" type="password" id="password" placeholder="Enter your password" name="password">
+										<input class="btn btn-default btn-login" type="submit" id="btn-login" value="Login">
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="content registerBox" style="display:none;">
+								<div class="form">
+									<form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+										<input id="email" class="form-control" type="text" placeholder="Email" name="email">
+										<input id="password1" class="form-control" type="password" placeholder="Password" name="password">
+										<div class="captcha-container form-group"></div>
+										<input class="btn btn-default btn-register" type="button" id="btn-signup" value="Create account" name="commit">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="forgot login-footer">
+							<span>Looking to 
+								<a href="javascript: showRegisterForm();">create an account</a>
+							?</span>
+						</div>
+						<div class="forgot register-footer" style="display:none">
+							<span>Already have an account?</span>
+							<a href="javascript: showLoginForm();">Login</a>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				openLoginModal(); 
+			});
+		</script>
+		<!--[if IE 8]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ie8/0.2.5/ie8.js"></script>
+  <![endif]-->
+
+  <!--[if lte IE 9]>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/base64.min.js"></script>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/es5-shim.min.js"></script>
+  <![endif]-->
+
+  <script src="https://cdn.auth0.com/js/auth0/9.14/auth0.min.js"></script>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+
+      var config = JSON.parse(
+        decodeURIComponent(escape(window.atob('@@config@@')))
+      );
+
+      var leeway = config.internalOptions.leeway;
+      if (leeway) {
+        var convertedLeeway = parseInt(leeway);
+      
+        if (!isNaN(convertedLeeway)) {
+          config.internalOptions.leeway = convertedLeeway;
+        }
+      }
+
+      var params = Object.assign({
+        overrides: {
+          __tenant: config.auth0Tenant,
+          __token_issuer: config.authorizationServer.issuer
+        },
+        domain: config.auth0Domain,
+        clientID: config.clientID,
+        redirectUri: config.callbackURL,
+        responseType: 'code'
+      }, config.internalOptions);
+
+      var webAuth = new auth0.WebAuth(params);
+      var databaseConnection = 'Username-Password-Authentication';
+      var captcha = webAuth.renderCaptcha(
+        document.querySelector('.captcha-container')
+      );
+
+      function login(e) {
+        e.preventDefault();
+        var button = this;
+        var username = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        button.disabled = true;
+        webAuth.login({
+          realm: databaseConnection,
+          username: username,
+          password: password,
+          captcha: captcha.getValue()
+        }, function(err) {
+          if (err) displayError(err);
+          button.disabled = false;
+        });
+      }
+
+      function signup() {
+        var button = this;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password1').value;
+
+        button.disabled = true;
+        webAuth.redirect.signupAndLogin({
+          connection: databaseConnection,
+          email: email,
+          password: password,
+          captcha: captcha.getValue()
+        }, function(err) {
+          if (err) displayError(err);
+          button.disabled = false;
+        });
+      }
+
+      function loginWithGoogle() {
+        webAuth.authorize({
+          connection: 'google-oauth2'
+        }, function(err) {
+          if (err) displayError(err);
+        });
+      }
+
+      function loginWithGithub() {
+        webAuth.authorize({
+          connection: 'github'
+        }, function(err) {
+          if (err) displayError(err);
+        });
+      }
+
+      function loginWithFacebook() {
+        webAuth.authorize({
+          connection: 'facebook'
+        }, function(err) {
+          if (err) displayError(err);
+        });
+      }
+
+      function displayError(err) {
+        captcha.reload();
+        var errorMessage = document.getElementById('error-message');
+        errorMessage.innerHTML = err.description;
+        errorMessage.style.display = 'block';
+      }
+
+      document.getElementById('btn-login').addEventListener('click', login);
+      document.getElementById('btn-google').addEventListener('click', loginWithGoogle);
+      document.getElementById('btn-github').addEventListener('click', loginWithGithub);
+      document.getElementById('btn-facebook').addEventListener('click', loginWithFacebook);
+      document.getElementById('btn-signup').addEventListener('click', signup);
+    });
+  </script>
+</body>
+</html>
