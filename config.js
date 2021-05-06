@@ -1,10 +1,9 @@
-var mysql      = require('mysql');
+var mysql      = require('mysql2');
 var connection = mysql.createConnection({
 	host     : 'us-cdbr-east-03.cleardb.com',
 	user     : 'bab2685f19d08c',
 	password : '415d70d5',
 	database : 'heroku_e0122e6c6548d22',
-	wait_timeout : '604800'
 });
 connection.connect(function(err){
 	if(!err){
