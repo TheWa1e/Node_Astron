@@ -4,7 +4,6 @@ var connection = mysql.createConnection({
 	user     : 'bab2685f19d08c',
 	password : '415d70d5',
 	database : 'heroku_e0122e6c6548d22',
-	connect_timeout : '100000'
 });
 connection.connect(function(err){
 	if(!err){
@@ -14,3 +13,4 @@ connection.connect(function(err){
 	}
 });
 module.exports = connection;
+connection.query("SET SESSION wait_timeout = 604800");
