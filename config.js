@@ -1,9 +1,10 @@
-/*var mysql      = require('mysql');
+var mysql      = require('mysql');
 var connection = mysql.createConnection({
 	host     : 'us-cdbr-east-03.cleardb.com',
 	user     : 'bab2685f19d08c',
 	password : '415d70d5',
-	database : 'heroku_e0122e6c6548d22'
+	database : 'heroku_e0122e6c6548d22',
+	connect_timeout : '100000'
 });
 connection.connect(function(err){
 	if(!err){
@@ -12,4 +13,4 @@ connection.connect(function(err){
 		console.log("Error while connecting with database");
 	}
 });
-module.exports = connection;*/
+module.exports = connection;
