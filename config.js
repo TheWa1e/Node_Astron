@@ -1,4 +1,4 @@
-var mysql      = require('mysql');
+/*var mysql      = require('mysql');
 var connection = mysql.createConnection({
 	host     : 'us-cdbr-east-03.cleardb.com',
 	user     : 'bab2685f19d08c',
@@ -12,4 +12,4 @@ connection.connect(function(err){
 		console.log("Error while connecting with database");
 	}
 });
-module.exports = connection; 
+module.exports = connection;*/
