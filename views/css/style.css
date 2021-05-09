@@ -326,6 +326,7 @@ header {
 	transition: 0.5s;
 	display:block;
 	cursor: pointer;
+	background-size:100%;
    }
 
 .works-item img:hover {
