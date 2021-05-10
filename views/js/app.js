@@ -58,7 +58,7 @@ const updateUI = async () => {
     console.log("first true")
     
   }
-  if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
+  if (document.cookie.split(';').filter(function(item) {
     return item.trim().indexOf('token_auth=') == 0
 }).length) {
   console.log("second true")
