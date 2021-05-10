@@ -51,10 +51,12 @@ const updateUI = async () => {
 
     let user = JSON.parse(JSON.stringify(await auth0.getUser()));
     let token = await auth0.getTokenSilently();
-    if(token){
-      login();
-    }
-    
+    if (document.cookie.split(';').filter(function(item) {
+      return item.trim().indexOf('token_auth=') == 0
+  }).length) {
+    login();
+  }
+    document.cookie = 'token_auth='+token;
 
     //document.getElementById("ipt-access-token").innerHTML = await auth0.getTokenSilently();
     //document.getElementById("ipt-user-profile").textContent = JSON.stringify(await auth0.getUser());
@@ -72,6 +74,7 @@ const login = async () => {
 };
 
 const logout = () => {
+  document.cookie = "";
   auth0.logout({
     returnTo: window.location.origin
   });
