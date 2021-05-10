@@ -44,9 +44,6 @@ const updateUI = async () => {
 
   document.getElementById("btn-logout").disabled = !isAuthenticated;
   document.getElementById("btn-login").disabled = isAuthenticated;
-  console.log("isAuthenticated");
-  console.log(isAuthenticated);
-  console.log("isAuthenticated");
   if (isAuthenticated) {
     document.getElementById("gated-content").classList.remove("hidden");
     document.getElementById("btncontainerout").classList.remove("hidden");
@@ -54,7 +51,10 @@ const updateUI = async () => {
 
     let user = JSON.parse(JSON.stringify(await auth0.getUser()));
     let token = await auth0.getTokenSilently();
-    document.cookie = 'token_auth='+token;
+    if(token){
+      login();
+    }
+    
 
     //document.getElementById("ipt-access-token").innerHTML = await auth0.getTokenSilently();
     //document.getElementById("ipt-user-profile").textContent = JSON.stringify(await auth0.getUser());
