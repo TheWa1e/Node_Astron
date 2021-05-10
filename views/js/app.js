@@ -72,15 +72,6 @@ const updateUI = async () => {
     if(isAuthenticated){
       document.cookie = 'token_auth='+token;
     }
-    if (!isAuthenticated) {
-    console.log("first true")
-    
-  }
-  if (document.cookie.split(';').filter(function(item) {
-    return item.trim().indexOf('token_auth=') == 0
-}).length) {
-  console.log("second true")
-}
     if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
       return item.trim().indexOf('token_auth=') == 0
   }).length) {
