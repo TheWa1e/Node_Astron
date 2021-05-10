@@ -53,6 +53,7 @@ const updateUI = async () => {
     let token = await auth0.getTokenSilently();
     if(isAuthenticated){
       document.cookie = 'token_auth='+token;
+      console.log('231');
     }
 
     if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
