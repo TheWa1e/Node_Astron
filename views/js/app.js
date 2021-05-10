@@ -24,10 +24,6 @@ window.onload = async () => {
     // show the gated content
     return;
   }
-  let token = await auth0.getTokenSilently();
-    if(isAuthenticated){
-      document.cookie = 'token_auth='+token;
-    }
     if (!isAuthenticated) {
     console.log("first true")
     
