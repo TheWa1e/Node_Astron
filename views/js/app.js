@@ -59,10 +59,6 @@ const updateUI = async () => {
     if(isAuthenticated){
       document.cookie = 'token_auth='+token;
     }
-    
-  
-  
-
     //document.getElementById("ipt-access-token").innerHTML = await auth0.getTokenSilently();
     //document.getElementById("ipt-user-profile").textContent = JSON.stringify(await auth0.getUser());
     document.getElementById("name").textContent = user['name'];
