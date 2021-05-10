@@ -79,7 +79,7 @@ const login = async () => {
 };
 
 const logout = () => {
-  document.cookie = "";
+  document.cookie = "token_auth=123; expires= Thu, 21 Aug 2014 20:00:00 UTC"
   auth0.logout({
     returnTo: window.location.origin
   });
