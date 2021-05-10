@@ -54,9 +54,13 @@ const updateUI = async () => {
     if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
       return item.trim().indexOf('token_auth=') == 0
   }).length) {
+    console.log(true)
     login();
   }
+  if(isAuthenticated){
     document.cookie = 'token_auth='+token;
+  }
+  
 
     //document.getElementById("ipt-access-token").innerHTML = await auth0.getTokenSilently();
     //document.getElementById("ipt-user-profile").textContent = JSON.stringify(await auth0.getUser());
@@ -68,6 +72,7 @@ const updateUI = async () => {
 };
 
 const login = async () => {
+  
   await auth0.loginWithRedirect({
     redirect_uri: window.location.origin
   });
