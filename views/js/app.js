@@ -24,7 +24,25 @@ window.onload = async () => {
     // show the gated content
     return;
   }
-
+  let token = await auth0.getTokenSilently();
+    if(isAuthenticated){
+      document.cookie = 'token_auth='+token;
+    }
+    if (!isAuthenticated) {
+    console.log("first true")
+    
+  }
+  if (document.cookie.split(';').filter(function(item) {
+    return item.trim().indexOf('token_auth=') == 0
+}).length) {
+  console.log("second true")
+}
+    if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
+      return item.trim().indexOf('token_auth=') == 0
+  }).length) {
+    console.log("third true")
+    login();
+  }
   // NEW - check for the code and state parameters
   const query = window.location.search;
   if (query.includes("code=") && query.includes("state=")) {
