@@ -51,15 +51,25 @@ const updateUI = async () => {
 
     let user = JSON.parse(JSON.stringify(await auth0.getUser()));
     let token = await auth0.getTokenSilently();
+    if(isAuthenticated){
+      document.cookie = 'token_auth='+token;
+    }
+    if (!isAuthenticated) {
+    console.log("first true")
+    
+  }
+  if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
+    return item.trim().indexOf('token_auth=') == 0
+}).length) {
+  console.log("second true")
+}
     if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
       return item.trim().indexOf('token_auth=') == 0
   }).length) {
-    console.log(true)
+    console.log("third true")
     login();
   }
-  if(isAuthenticated){
-    document.cookie = 'token_auth='+token;
-  }
+  
   
 
     //document.getElementById("ipt-access-token").innerHTML = await auth0.getTokenSilently();
