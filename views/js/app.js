@@ -51,7 +51,7 @@ const updateUI = async () => {
 
     let user = JSON.parse(JSON.stringify(await auth0.getUser()));
     let token = await auth0.getTokenSilently();
-    if (isAuthenticated && document.cookie.split(';').filter(function(item) {
+    if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
       return item.trim().indexOf('token_auth=') == 0
   }).length) {
     login();
