@@ -37,16 +37,13 @@ window.onload = async () => {
     // Use replaceState to redirect the user away and remove the querystring parameters
     window.history.replaceState({}, document.title, "/");
   }
-  console.log("isAuthenticated");
-  console.log(isAuthenticated);
-  if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
+  setTimeout(()=>{
+    if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
       return item.trim().indexOf('token_auth=') == 0
   }).length) {
-    console.log("third true")
     login();
   }
-  console.log(isAuthenticated);
-  console.log("isAuthenticated");
+  },3000)
 
 };
 
