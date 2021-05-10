@@ -44,7 +44,9 @@ const updateUI = async () => {
 
   document.getElementById("btn-logout").disabled = !isAuthenticated;
   document.getElementById("btn-login").disabled = isAuthenticated;
-
+  console.log("isAuthenticated");
+  console.log(isAuthenticated);
+  console.log("isAuthenticated");
   if (isAuthenticated) {
     document.getElementById("gated-content").classList.remove("hidden");
     document.getElementById("btncontainerout").classList.remove("hidden");
