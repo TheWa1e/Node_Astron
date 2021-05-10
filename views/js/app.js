@@ -38,7 +38,7 @@ window.onload = async () => {
     window.history.replaceState({}, document.title, "/");
   }
   setTimeout(()=>{
-    if (!await auth0.isAuthenticated() && document.cookie.split(';').filter(function(item) {
+    if (!(await auth0.isAuthenticated()) && document.cookie.split(';').filter(function(item) {
       return item.trim().indexOf('token_auth=') == 0
   }).length) {
     login();
