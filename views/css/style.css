@@ -317,15 +317,14 @@ header {
 	transition: opacity 0.5s;
 }*/
 
-/*.works-item {
-	display: inline-block;
-  overflow: hidden;
-}*/
+.works-item {
+cursor: pointer;
+}
+
 
 .works-item img {
 	transition: 0.5s;
 	display:block;
-	cursor: pointer;
 	background-size:100%;
    }
 
