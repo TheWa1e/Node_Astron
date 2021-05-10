@@ -2,7 +2,7 @@ var express=require("express");
 var bodyParser=require('body-parser');
 const { join } = require("path");
  
-var connection = require('./config');
+var pool = require('./config');
 var app = express();
  
 /*var authenticateController=require('./controllers/authenticate-controller');
@@ -21,7 +21,7 @@ app.get("/auth_config.json", (req, res) => {
   res.sendFile(join(__dirname, "auth_config.json"));
 });
 
-connection.query('SELECT message FROM message', function(error, result, fields){
+pool.query('SELECT message FROM message', function(error, result, fields){
     app.get("/", function (req, res) {
       res.render("index.ejs", { params: result });
     });
