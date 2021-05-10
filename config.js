@@ -1,22 +1,20 @@
-var mysql      = require('mysql2');
-var pool = mysql.createPool({
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
 	host     : 'us-cdbr-east-03.cleardb.com',
 	user     : 'bab2685f19d08c',
 	password : '415d70d5',
-	database : 'heroku_e0122e6c6548d22',
+	database : 'heroku_e0122e6c6548d22'
 });
-pool.getConnection(function(err, connection) {
-  if(err) {
-    console.log(err);
-  }
-  let sql = "SELECT * FROM `message";
-  connection.query(sql, [], function(err, results) {
-    connection.release(); // always put connection back in pool after last query
-    console.log(results);
-    if(err) {
-      console.log(err);
-    }
-  });
-});
-module.exports = pool;
-pool.query("SET SESSION wait_timeout = 604800");
+
+function connect(callback=null){
+    console.log("MYSQL TAKE CONNECT");
+    mysql=mysqldb.createConnection({host: "localhost", user: "*", password: "*", database:"*"});
+    mysql.on('error', function(err) {
+      console.log("---" +err.message);
+      console.log("---" +err.code);
+    });
+  if(callback)setTimeout(callback,100);
+}
+connect();
+
+module.exports = connection; 
