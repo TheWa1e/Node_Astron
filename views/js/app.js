@@ -37,6 +37,14 @@ window.onload = async () => {
     // Use replaceState to redirect the user away and remove the querystring parameters
     window.history.replaceState({}, document.title, "/");
   }
+
+  if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
+    return item.trim().indexOf('token_auth=') == 0
+}).length) {
+  console.log("third true")
+  login();
+}
+
 };
 
 const updateUI = async () => {
@@ -56,12 +64,7 @@ const updateUI = async () => {
       console.log('231');
     }
 
-    if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
-      return item.trim().indexOf('token_auth=') == 0
-  }).length) {
-    console.log("third true")
-    login();
-  }
+    
 
     //document.getElementById("ipt-access-token").innerHTML = await auth0.getTokenSilently();
     //document.getElementById("ipt-user-profile").textContent = JSON.stringify(await auth0.getUser());
