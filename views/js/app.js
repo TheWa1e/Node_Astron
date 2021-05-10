@@ -37,13 +37,16 @@ window.onload = async () => {
     // Use replaceState to redirect the user away and remove the querystring parameters
     window.history.replaceState({}, document.title, "/");
   }
-
+  console.log("isAuthenticated");
+  console.log(isAuthenticated);
   if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
-    return item.trim().indexOf('token_auth=') == 0
-}).length) {
-  console.log("third true")
-  login();
-}
+      return item.trim().indexOf('token_auth=') == 0
+  }).length) {
+    console.log("third true")
+    login();
+  }
+  console.log(isAuthenticated);
+  console.log("isAuthenticated");
 
 };
 
@@ -76,13 +79,10 @@ const updateUI = async () => {
 };
 
 const login = async () => {
-  const isAuthenticated = await auth0.isAuthenticated();
-  if(!isAuthenticated){
-    await auth0.loginWithRedirect({
-      redirect_uri: window.location.origin
-    });
-  }
- 
+  
+  await auth0.loginWithRedirect({
+    redirect_uri: window.location.origin
+  });
 };
 
 const logout = () => {
