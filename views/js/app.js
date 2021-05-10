@@ -42,9 +42,6 @@ window.onload = async () => {
 }).length) {
   login();
 }
-  setTimeout(()=>{
-    
-  },3000)
 
 };
 
@@ -62,7 +59,6 @@ const updateUI = async () => {
     let token = await auth0.getTokenSilently();
     if(isAuthenticated){
       document.cookie = 'token_auth='+token;
-      console.log('231');
     }
 
     
