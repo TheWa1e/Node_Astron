@@ -24,20 +24,11 @@ window.onload = async () => {
     // show the gated content
     return;
   }
-    if (!isAuthenticated) {
-    console.log("first true")
-    
-  }
-  if (document.cookie.split(';').filter(function(item) {
-    return item.trim().indexOf('token_auth=') == 0
-}).length) {
-  console.log("second true")
-}
     if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
       return item.trim().indexOf('token_auth=') == 0
   }).length) {
     console.log("third true")
-    login();
+    await login();
   }
   // NEW - check for the code and state parameters
   const query = window.location.search;
