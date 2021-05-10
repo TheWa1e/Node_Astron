@@ -68,12 +68,7 @@ const updateUI = async () => {
     if(isAuthenticated){
       document.cookie = 'token_auth='+token;
     }
-    if (!isAuthenticated && document.cookie.split(';').filter(function(item) {
-      return item.trim().indexOf('token_auth=') == 0
-  }).length) {
-    console.log("third true")
-    login();
-  }
+    
   
   
 
