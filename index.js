@@ -2,7 +2,7 @@ var express=require("express");
 var bodyParser=require('body-parser');
 const { join } = require("path");
  
-var pool = require('./config');
+var pool = require('./controllers/config');
 var app = express();
  
 /*var authenticateController=require('./controllers/authenticate-controller');
