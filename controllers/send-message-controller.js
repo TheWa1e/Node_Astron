@@ -1,5 +1,5 @@
 var express=require("express");
-var connection = require('./../config');
+var connection = require('./config');
 
 module.exports.sendmessage=function(req,res){
   var message={
