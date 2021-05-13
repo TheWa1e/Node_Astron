@@ -71,6 +71,10 @@ header {
   height: auto;
   background-color: #485563;
   z-index: 11;
+  margin-top: -15px;
+  padding: 1em;
+  border-radius:2em;
+  margin-bottom: -15px;
 }
 
 .show-img {
