@@ -66,10 +66,10 @@ header {
 	background-size: cover;
 }
 
-#gated-content {;
+#gated-content {
   width: 100%;
   height: auto;
-  background-color: #485563;
+  background-color: #48556394;
   position: fixed;
   z-index: 11;
 }
@@ -87,7 +87,7 @@ header {
 
 .nav-wrapper {
 	position: absolute;
-	top: 28px;
+	top: 30px;
 	width: 100%;
 }
 

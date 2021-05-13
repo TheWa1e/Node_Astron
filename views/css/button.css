@@ -192,8 +192,9 @@ float:right;
 #gated-content{
   padding: 1.5em;
   background-color: #485563;
-  font: 1em;
   border-radius:2em;
+  margin-top:10px;
+  padding: 10px 10px 10px 10px;
 
 }
 #name{
