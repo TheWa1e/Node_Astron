@@ -66,12 +66,12 @@ header {
 	background-size: cover;
 }
 
-#gated-content {
+#gated-content {;
   width: 100%;
   height: auto;
-  background-color: #48556394;
+  background-color: #485563;
+  position: fixed;
   z-index: 11;
-  padding: 2em;
 }
 
 .show-img {
@@ -87,6 +87,7 @@ header {
 
 .nav-wrapper {
 	position: absolute;
+	top: 28px;
 	width: 100%;
 }
 
@@ -1117,20 +1118,14 @@ footer {
 		left: 42%;
 	}
 }
-#label {
-	width: 60px;
-}
 
 #picture {
 	width: 65px;
   height: 65px;
   border-radius: 50px;
-  margin-top: -10px;
 }
 
 #name {
-	text-align: right;
-  margin-top: -45px;
-  margin-right: 560px;
-  color: white;
+	font-family: sans-serif;
+	font-size: 17px;
 }
