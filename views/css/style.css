@@ -809,10 +809,8 @@ header {
 
 
 footer {
-	/*padding-top: 50px;
-	padding-bottom: 50px;*/
-	margin-top: 3em;
-	margin-bottom: 3em;
+	margin-top: 2em;
+  padding: 1em;
 }
 
 
