@@ -66,7 +66,7 @@ header {
 	background-size: cover;
 }
 
-.hidden {;
+#gated-content {;
   width: 100%;
   height: auto;
   background-color: #485563;
