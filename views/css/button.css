@@ -190,10 +190,10 @@ float:right;
 }
 
 #gated-content{
-  padding: 1em;
+  padding: 1.5em;
   background-color: #485563;
   font: 1em;
-  border-radius:50px;
+  border-radius:2em;
 
 }
 #name{

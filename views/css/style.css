@@ -66,6 +66,14 @@ header {
 	background-size: cover;
 }
 
+.hidden {;
+  width: 100%;
+  height: auto;
+  background-color: #485563;
+  position: fixed;
+  z-index: 11;
+}
+
 .show-img {
 	height: 3em;
   width: 3em;
