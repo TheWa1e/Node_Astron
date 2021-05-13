@@ -20,6 +20,7 @@ connection.query('SELECT message FROM message', function(error, result, fields){
     app.get("/", function (req, res) {
       res.render("index.ejs", { params: result });
     });
+    console.log(result)
 });
 
 app.post('/controllers/send-message-controller',sendmessageController.sendmessage);
