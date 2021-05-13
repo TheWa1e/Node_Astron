@@ -23,10 +23,10 @@ $(function () {
 new Vue({
   el: '#app',
   data: {
-    coords: [54.185396, 37.605994],
+    coords: [55.669649, 37.676584],
     placemarks: [
         {
-          coords: [54.185396, 37.605994],
+          coords: [55.669649, 37.676584],
           properties: {
             balloonContentBody: 'name1',
             balloonContentFooter: '1',
@@ -36,7 +36,7 @@ new Vue({
           markerId: '1'
         },
         {
-          coords: [54.185396, 37.605994],
+          coords: [55.669649, 37.676584],
           properties: {
             balloonContentBody: 'name2',
             balloonContentFooter: '1',
@@ -46,7 +46,7 @@ new Vue({
           markerId: '2'
         },
         {
-          coords: [54.185396, 37.605994],
+          coords: [55.669649, 37.676584],
           properties: {
             balloonContentBody: 'name2',
             balloonContentFooter: '1',
