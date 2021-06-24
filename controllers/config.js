@@ -8,10 +8,10 @@ var db_config = {
 	port: 3306,
 };
 
-
+var connection;
 
 function handleDisconnect() {
-  var connection;
+  
   connection = mysql.createConnection(db_config);
 
   connection.connect(function(err) {              
