@@ -14,7 +14,7 @@ function handleDisconnect() {
   
   connection = mysql.createPool(db_config);
 
-  connection.connect(function(err) {              
+  connection.Pool(function(err) {              
     if(err) {                                    
       console.log('error when connecting to db:', err);
       setTimeout(handleDisconnect, 0); 
