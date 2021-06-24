@@ -3,6 +3,7 @@ var bodyParser=require('body-parser');
 const { join } = require("path");
 var app = express();
 var sendmessageController=require('./controllers/send-message-controller');
+var mysql      = require('mysql');
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
