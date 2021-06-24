@@ -14,7 +14,13 @@ app.use(express.static(join(__dirname, "views")));
 app.get("/auth_config.json", (req, res) => {
   res.sendFile(join(__dirname, "auth_config.json"));
 });
-
+var db_config = {
+	host     : 'us-cdbr-east-03.cleardb.com',
+	user     : 'bab2685f19d08c',
+	password : '415d70d5',
+	database : 'heroku_e0122e6c6548d22',
+	port: 3306,
+};
 let connection = mysql.createConnection(db_config);
   
 connection.connect(function(err) {              
