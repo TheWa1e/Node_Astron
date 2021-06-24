@@ -14,12 +14,7 @@ app.use(express.static(join(__dirname, "views")));
 app.get("/auth_config.json", (req, res) => {
   res.sendFile(join(__dirname, "auth_config.json"));
 });
-var message={
-    "name":req.body.username,
-    "email":req.body.emailaddres,
-    "phone":req.body.phone,
-    "message":req.body.message
-  }
+
 let connection = mysql.createConnection(db_config);
   
 connection.connect(function(err) {              
